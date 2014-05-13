@@ -1,0 +1,116 @@
+file 40365 1399957408                                           
+version 2
+run Ping1-0-20140513-13:58:00-27380
+attr configname Ping1
+attr datetime 20140513-13:58:00
+attr experiment Ping1
+attr inifile assignment1.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network assignment1
+attr processid 27380
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+vector 7  assignment1.host[0].wlan[0].mgmt  dataQueueLen:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "data queue length, vector"
+vector 25  assignment1.host[1].wlan[0].mgmt  dataQueueLen:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "data queue length, vector"
+vector 35  assignment1.ap.wlan[0].mgmt  dataQueueLen:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "data queue length, vector"
+vector 46  assignment1.host[0].wlan[0].mac  RadioState  ETV
+attr enum  "IDLE=0, OFF=4, RECV=1, SLEEP=3, TRANSMIT=2"
+attr enumname  RadioState
+vector 45  assignment1.host[0].wlan[0].mac  State  ETV
+attr enum  "BACKOFF=3, DEFER=1, IDLE=0, RECEIVE=8, WAITACK=4, WAITAIFS=2, WAITCTS=6, WAITMULTICAST=5, WAITSIFS=7"
+attr enumname  Ieee80211Mac
+vector 52  assignment1.host[1].wlan[0].mac  RadioState  ETV
+attr enum  "IDLE=0, OFF=4, RECV=1, SLEEP=3, TRANSMIT=2"
+attr enumname  RadioState
+vector 51  assignment1.host[1].wlan[0].mac  State  ETV
+attr enum  "BACKOFF=3, DEFER=1, IDLE=0, RECEIVE=8, WAITACK=4, WAITAIFS=2, WAITCTS=6, WAITMULTICAST=5, WAITSIFS=7"
+attr enumname  Ieee80211Mac
+vector 58  assignment1.ap.wlan[0].mac  RadioState  ETV
+attr enum  "IDLE=0, OFF=4, RECV=1, SLEEP=3, TRANSMIT=2"
+attr enumname  RadioState
+vector 57  assignment1.ap.wlan[0].mac  State  ETV
+attr enum  "BACKOFF=3, DEFER=1, IDLE=0, RECEIVE=8, WAITACK=4, WAITAIFS=2, WAITCTS=6, WAITMULTICAST=5, WAITSIFS=7"
+attr enumname  Ieee80211Mac
+vector 13  assignment1.host[0].wlan[0].radio  bitrate:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, vector"
+attr unit  bps
+vector 15  assignment1.host[0].wlan[0].radio  radioState:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), vector"
+vector 14  assignment1.host[0].wlan[0].radio  channelNo:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "channel no, vector"
+vector 31  assignment1.host[1].wlan[0].radio  bitrate:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, vector"
+attr unit  bps
+vector 33  assignment1.host[1].wlan[0].radio  radioState:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), vector"
+vector 32  assignment1.host[1].wlan[0].radio  channelNo:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "channel no, vector"
+vector 41  assignment1.ap.wlan[0].radio  bitrate:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, vector"
+attr unit  bps
+vector 43  assignment1.ap.wlan[0].radio  radioState:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), vector"
+vector 42  assignment1.ap.wlan[0].radio  channelNo:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "channel no, vector"
+vector 102  assignment1.host[1].tcp  tcpRcvQueueBytes  ETV
+vector 89  assignment1.host[1].tcp  "advertised window"  ETV
+vector 88  assignment1.host[1].tcp  "receive window"  ETV
+vector 91  assignment1.host[1].tcp  "sent ack"  ETV
+vector 20  assignment1.host[1].networkLayer.arp  sentReq:vector  ETV
+attr title  "ARP request sent, vector"
+vector 29  assignment1.host[1].wlan[0].mac  rcvdPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, vector(packetBytes)"
+vector 28  assignment1.host[1].wlan[0].mac  sentDownPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, vector(packetBytes)"
+vector 54  assignment1.host[1].wlan[0].mac  "throughput AC0"  ETV
+88	3915 76 9 45828 0 45 5 7504 7504 37520 281550080
+89	3991 76 9 45828 0 45 5 7504 7504 37520 281550080
+91	4067 61 9 45828 0 45 5 0 0 0 0
+102	4128 66 9 45828 0 45 5 0 0 0 0
+7	4194 8 0 0 0 0 1 0 0 0 0
+13	4202 16 0 0 0 0 1 54000000 54000000 54000000 2.916e+15
+14	4218 9 0 0 0 0 1 0 0 0 0
+15	4227 9 0 0 0 0 1 0 0 0 0
+20	4236 194 10 47970 0 47 15 1 1 15 15
+25	4430 9 0 0 0 0 1 0 0 0 0
+28	4439 2192 14 48035 0.000028 47.006112 105 70 70 7350 514500
+29	6631 209 13 47973 0 47 15 70 70 1050 73500
+31	6840 16 0 0 0 0 1 54000000 54000000 54000000 2.916e+15
+32	6856 9 0 0 0 0 1 0 0 0 0
+33	6865 4179 0 48039 0 47.00615 211 0 2 210 420
+35	11044 9 0 0 0 0 1 0 0 0 0
+41	11053 16 0 0 0 0 1 54000000 54000000 54000000 2.916e+15
+42	11069 9 0 0 0 0 1 0 0 0 0
+43	11078 9 0 0 0 0 1 0 0 0 0
+45	11087 18 0 0 0 0 2 0 0 0 0
+46	11105 18 0 0 0 0 2 0 0 0 0
+51	11123 20664 0 48042 0 47.006468 1052 0 4 3480 12540
+52	31787 8358 0 48039 0 47.00615 422 0 2 420 840
+54	40145 184 1084 47973 1 47 14 0 0 0 0
+57	40329 18 0 0 0 0 2 0 0 0 0
+58	40347 18 0 0 0 0 2 0 0 0 0

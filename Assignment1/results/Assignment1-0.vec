@@ -1,0 +1,484 @@
+version 2
+run Assignment1-0-20140513-16:38:40-30416
+attr configname Assignment1
+attr datetime 20140513-16:38:40
+attr experiment Assignment1
+attr inifile assignment1.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network assignment1
+attr processid 30416
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+vector 7  assignment1.host[0].wlan[0].mgmt  dataQueueLen:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "data queue length, vector"
+vector 25  assignment1.host[1].wlan[0].mgmt  dataQueueLen:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "data queue length, vector"
+vector 35  assignment1.ap.wlan[0].mgmt  dataQueueLen:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "data queue length, vector"
+vector 46  assignment1.host[0].wlan[0].mac  RadioState  ETV
+attr enum  "IDLE=0, OFF=4, RECV=1, SLEEP=3, TRANSMIT=2"
+attr enumname  RadioState
+vector 45  assignment1.host[0].wlan[0].mac  State  ETV
+attr enum  "BACKOFF=3, DEFER=1, IDLE=0, RECEIVE=8, WAITACK=4, WAITAIFS=2, WAITCTS=6, WAITMULTICAST=5, WAITSIFS=7"
+attr enumname  Ieee80211Mac
+vector 52  assignment1.host[1].wlan[0].mac  RadioState  ETV
+attr enum  "IDLE=0, OFF=4, RECV=1, SLEEP=3, TRANSMIT=2"
+attr enumname  RadioState
+vector 51  assignment1.host[1].wlan[0].mac  State  ETV
+attr enum  "BACKOFF=3, DEFER=1, IDLE=0, RECEIVE=8, WAITACK=4, WAITAIFS=2, WAITCTS=6, WAITMULTICAST=5, WAITSIFS=7"
+attr enumname  Ieee80211Mac
+vector 58  assignment1.ap.wlan[0].mac  RadioState  ETV
+attr enum  "IDLE=0, OFF=4, RECV=1, SLEEP=3, TRANSMIT=2"
+attr enumname  RadioState
+vector 57  assignment1.ap.wlan[0].mac  State  ETV
+attr enum  "BACKOFF=3, DEFER=1, IDLE=0, RECEIVE=8, WAITACK=4, WAITAIFS=2, WAITCTS=6, WAITMULTICAST=5, WAITSIFS=7"
+attr enumname  Ieee80211Mac
+vector 13  assignment1.host[0].wlan[0].radio  bitrate:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, vector"
+attr unit  bps
+vector 15  assignment1.host[0].wlan[0].radio  radioState:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), vector"
+vector 14  assignment1.host[0].wlan[0].radio  channelNo:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "channel no, vector"
+vector 31  assignment1.host[1].wlan[0].radio  bitrate:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, vector"
+attr unit  bps
+vector 33  assignment1.host[1].wlan[0].radio  radioState:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), vector"
+vector 32  assignment1.host[1].wlan[0].radio  channelNo:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "channel no, vector"
+vector 41  assignment1.ap.wlan[0].radio  bitrate:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, vector"
+attr unit  bps
+vector 43  assignment1.ap.wlan[0].radio  radioState:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), vector"
+vector 42  assignment1.ap.wlan[0].radio  channelNo:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "channel no, vector"
+vector 102  assignment1.host[1].tcp  tcpRcvQueueBytes  ETV
+vector 89  assignment1.host[1].tcp  "advertised window"  ETV
+vector 88  assignment1.host[1].tcp  "receive window"  ETV
+vector 91  assignment1.host[1].tcp  "sent ack"  ETV
+vector 20  assignment1.host[1].networkLayer.arp  sentReq:vector  ETV
+attr title  "ARP request sent, vector"
+vector 29  assignment1.host[1].wlan[0].mac  rcvdPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, vector(packetBytes)"
+vector 28  assignment1.host[1].wlan[0].mac  sentDownPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, vector(packetBytes)"
+vector 50  assignment1.host[0].wlan[0].radio  snirVector  ETV
+vector 12  assignment1.host[0].wlan[0].mac  rcvdPkFromLL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, vector(packetBytes)"
+vector 62  assignment1.ap.wlan[0].radio  snirVector  ETV
+vector 40  assignment1.ap.wlan[0].mac  rcvdPkFromLL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, vector(packetBytes)"
+vector 37  assignment1.ap.wlan[0].mac  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 39  assignment1.ap.wlan[0].mac  rcvdPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, vector(packetBytes)"
+vector 38  assignment1.ap.wlan[0].mac  sentDownPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, vector(packetBytes)"
+vector 56  assignment1.host[1].wlan[0].radio  snirVector  ETV
+vector 30  assignment1.host[1].wlan[0].mac  rcvdPkFromLL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, vector(packetBytes)"
+vector 55  assignment1.host[1].wlan[0].mac  "Mac delay AC0"  ETV
+vector 9  assignment1.host[0].wlan[0].mac  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 3  assignment1.host[0].networkLayer.arp  sentReply:vector  ETV
+attr title  "ARP replies sent, vector"
+vector 11  assignment1.host[0].wlan[0].mac  rcvdPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, vector(packetBytes)"
+vector 10  assignment1.host[0].wlan[0].mac  sentDownPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, vector(packetBytes)"
+vector 49  assignment1.host[0].wlan[0].mac  "Mac delay AC0"  ETV
+vector 27  assignment1.host[1].wlan[0].mac  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 61  assignment1.ap.wlan[0].mac  "Mac delay AC0"  ETV
+3	51	0.001331905402	1
+7	0	0	0
+9	48	0.001331905402	70
+10	56	0.001359905402	70
+11	54	0.001331905402	70
+12	20	0.000066257864	70
+12	35	0.000380905402	14
+12	48	0.001331905402	70
+12	77	0.001712827482	14
+12	93	0.001796827482	70
+12	102	0.002111068668	14
+13	0	0	54000000
+14	0	0	0
+15	0	0	0
+15	16	0.000028257864	1
+15	19	0.000066257864	0
+15	29	0.000076905402	1
+15	34	0.000380905402	0
+15	42	0.000579905402	1
+15	47	0.001331905402	0
+15	57	0.001359905402	2
+15	60	0.001397905402	0
+15	71	0.001408827482	1
+15	76	0.001712827482	0
+15	83	0.001758827482	1
+15	92	0.001796827482	0
+15	97	0.001807068668	1
+15	101	0.002111068668	0
+20	10	0	1
+25	0	0	0
+27	86	0.001796810804	70
+28	14	0.000028	70
+28	95	0.001806810804	14
+29	13	0	70
+29	91	0.001796810804	86
+30	33	0.000380888724	14
+30	46	0.001331888724	70
+30	62	0.001398163266	70
+30	75	0.001712810804	14
+30	86	0.001796810804	70
+31	0	0	54000000
+32	0	0	0
+33	0	0	0
+33	15	0.000028	2
+33	18	0.000066	0
+33	28	0.000076888724	1
+33	32	0.000380888724	0
+33	41	0.000579888724	1
+33	45	0.001331888724	0
+33	58	0.001360163266	1
+33	61	0.001398163266	0
+33	70	0.001408810804	1
+33	74	0.001712810804	0
+33	82	0.001758810804	1
+33	85	0.001796810804	0
+33	96	0.001806810804	2
+33	99	0.002110810804	0
+35	0	0	0
+37	23	0.000066444362	70
+37	65	0.001398366442	70
+38	26	0.000076444362	14
+38	39	0.000579444362	70
+38	68	0.001408366442	14
+38	80	0.001758366442	70
+39	25	0.000066444362	70
+39	67	0.001398366442	70
+40	23	0.000066444362	70
+40	65	0.001398366442	70
+40	104	0.002111255166	14
+41	0	0	54000000
+42	0	0	0
+43	0	0	0
+43	17	0.000028444362	1
+43	22	0.000066444362	0
+43	27	0.000076444362	2
+43	31	0.000380444362	0
+43	40	0.000579444362	2
+43	44	0.001331444362	0
+43	59	0.001360366442	1
+43	64	0.001398366442	0
+43	69	0.001408366442	2
+43	73	0.001712366442	0
+43	81	0.001758366442	2
+43	84	0.001796366442	0
+43	98	0.001807255166	1
+43	103	0.002111255166	0
+45	0	0	0
+45	0	0	0
+45	16	0.000028257864	0
+45	16	0.000028257864	0
+45	19	0.000066257864	0
+45	19	0.000066257864	0
+45	20	0.000066257864	0
+45	20	0.000066257864	0
+45	21	0.000066257864	0
+45	21	0.000066257864	0
+45	29	0.000076905402	0
+45	29	0.000076905402	0
+45	30	0.000380257864	0
+45	30	0.000380257864	0
+45	34	0.000380905402	0
+45	34	0.000380905402	0
+45	35	0.000380905402	0
+45	35	0.000380905402	0
+45	42	0.000579905402	0
+45	42	0.000579905402	0
+45	47	0.001331905402	0
+45	47	0.001331905402	0
+45	48	0.001331905402	0
+45	48	0.001331905402	0
+45	54	0.001331905402	0
+45	54	0.001331905402	2
+45	56	0.001359905402	2
+45	56	0.001359905402	4
+45	57	0.001359905402	4
+45	57	0.001359905402	4
+45	60	0.001397905402	4
+45	60	0.001397905402	4
+45	71	0.001408827482	4
+45	71	0.001408827482	4
+45	76	0.001712827482	4
+45	76	0.001712827482	4
+45	77	0.001712827482	4
+45	77	0.001712827482	2
+45	79	0.001740827482	2
+45	79	0.001740827482	3
+45	83	0.001758827482	3
+45	83	0.001758827482	1
+45	92	0.001796827482	1
+45	92	0.001796827482	2
+45	93	0.001796827482	2
+45	93	0.001796827482	1
+45	94	0.001796827482	1
+45	94	0.001796827482	1
+45	97	0.001807068668	1
+45	97	0.001807068668	1
+45	100	0.002110827482	1
+45	100	0.002110827482	1
+45	101	0.002111068668	1
+45	101	0.002111068668	2
+45	102	0.002111068668	2
+45	102	0.002111068668	2
+46	0	0	0
+46	0	0	0
+46	16	0.000028257864	0
+46	16	0.000028257864	1
+46	19	0.000066257864	1
+46	19	0.000066257864	0
+46	29	0.000076905402	0
+46	29	0.000076905402	1
+46	34	0.000380905402	1
+46	34	0.000380905402	0
+46	42	0.000579905402	0
+46	42	0.000579905402	1
+46	47	0.001331905402	1
+46	47	0.001331905402	0
+46	57	0.001359905402	0
+46	57	0.001359905402	2
+46	60	0.001397905402	2
+46	60	0.001397905402	0
+46	71	0.001408827482	0
+46	71	0.001408827482	1
+46	76	0.001712827482	1
+46	76	0.001712827482	0
+46	83	0.001758827482	0
+46	83	0.001758827482	1
+46	92	0.001796827482	1
+46	92	0.001796827482	0
+46	97	0.001807068668	0
+46	97	0.001807068668	1
+46	101	0.002111068668	1
+46	101	0.002111068668	0
+49	77	0.001712827482	0.00038092208
+50	19	0.000066257864	35.194055703166
+51	0	0	0
+51	0	0	0
+51	13	0	0
+51	13	0	2
+51	14	0.000028	2
+51	14	0.000028	4
+51	15	0.000028	4
+51	15	0.000028	4
+51	18	0.000066	4
+51	18	0.000066	4
+51	28	0.000076888724	4
+51	28	0.000076888724	4
+51	32	0.000380888724	4
+51	32	0.000380888724	4
+51	33	0.000380888724	4
+51	33	0.000380888724	2
+51	37	0.000408888724	2
+51	37	0.000408888724	3
+51	38	0.000453888724	3
+51	38	0.000453888724	0
+51	41	0.000579888724	0
+51	41	0.000579888724	0
+51	45	0.001331888724	0
+51	45	0.001331888724	0
+51	46	0.001331888724	0
+51	46	0.001331888724	0
+51	58	0.001360163266	0
+51	58	0.001360163266	0
+51	61	0.001398163266	0
+51	61	0.001398163266	0
+51	62	0.001398163266	0
+51	62	0.001398163266	0
+51	63	0.001398163266	0
+51	63	0.001398163266	0
+51	70	0.001408810804	0
+51	70	0.001408810804	0
+51	72	0.001712163266	0
+51	72	0.001712163266	0
+51	74	0.001712810804	0
+51	74	0.001712810804	0
+51	75	0.001712810804	0
+51	75	0.001712810804	0
+51	82	0.001758810804	0
+51	82	0.001758810804	0
+51	85	0.001796810804	0
+51	85	0.001796810804	0
+51	86	0.001796810804	0
+51	86	0.001796810804	7
+51	95	0.001806810804	7
+51	95	0.001806810804	2
+51	96	0.001806810804	2
+51	96	0.001806810804	1
+51	99	0.002110810804	1
+51	99	0.002110810804	2
+52	0	0	0
+52	0	0	0
+52	15	0.000028	0
+52	15	0.000028	2
+52	18	0.000066	2
+52	18	0.000066	0
+52	28	0.000076888724	0
+52	28	0.000076888724	1
+52	32	0.000380888724	1
+52	32	0.000380888724	0
+52	41	0.000579888724	0
+52	41	0.000579888724	1
+52	45	0.001331888724	1
+52	45	0.001331888724	0
+52	58	0.001360163266	0
+52	58	0.001360163266	1
+52	61	0.001398163266	1
+52	61	0.001398163266	0
+52	70	0.001408810804	0
+52	70	0.001408810804	1
+52	74	0.001712810804	1
+52	74	0.001712810804	0
+52	82	0.001758810804	0
+52	82	0.001758810804	1
+52	85	0.001796810804	1
+52	85	0.001796810804	0
+52	96	0.001806810804	0
+52	96	0.001806810804	2
+52	99	0.002110810804	2
+52	99	0.002110810804	0
+55	33	0.000380888724	0.000380888724
+56	32	0.000380888724	30.467133188048
+57	0	0	0
+57	0	0	0
+57	17	0.000028444362	0
+57	17	0.000028444362	0
+57	22	0.000066444362	0
+57	22	0.000066444362	0
+57	23	0.000066444362	0
+57	23	0.000066444362	7
+57	26	0.000076444362	7
+57	26	0.000076444362	2
+57	27	0.000076444362	2
+57	27	0.000076444362	1
+57	31	0.000380444362	1
+57	31	0.000380444362	2
+57	36	0.000408444362	2
+57	36	0.000408444362	3
+57	39	0.000579444362	3
+57	39	0.000579444362	5
+57	40	0.000579444362	5
+57	40	0.000579444362	5
+57	43	0.001331444362	5
+57	43	0.001331444362	1
+57	44	0.001331444362	1
+57	44	0.001331444362	2
+57	55	0.001359444362	2
+57	55	0.001359444362	3
+57	59	0.001360366442	3
+57	59	0.001360366442	1
+57	64	0.001398366442	1
+57	64	0.001398366442	2
+57	65	0.001398366442	2
+57	65	0.001398366442	7
+57	68	0.001408366442	7
+57	68	0.001408366442	2
+57	69	0.001408366442	2
+57	69	0.001408366442	1
+57	73	0.001712366442	1
+57	73	0.001712366442	2
+57	78	0.001740366442	2
+57	78	0.001740366442	3
+57	80	0.001758366442	3
+57	80	0.001758366442	4
+57	81	0.001758366442	4
+57	81	0.001758366442	4
+57	84	0.001796366442	4
+57	84	0.001796366442	4
+57	98	0.001807255166	4
+57	98	0.001807255166	4
+57	103	0.002111255166	4
+57	103	0.002111255166	4
+57	104	0.002111255166	4
+57	104	0.002111255166	2
+58	0	0	0
+58	0	0	0
+58	17	0.000028444362	0
+58	17	0.000028444362	1
+58	22	0.000066444362	1
+58	22	0.000066444362	0
+58	27	0.000076444362	0
+58	27	0.000076444362	2
+58	31	0.000380444362	2
+58	31	0.000380444362	0
+58	40	0.000579444362	0
+58	40	0.000579444362	2
+58	44	0.001331444362	2
+58	44	0.001331444362	0
+58	59	0.001360366442	0
+58	59	0.001360366442	1
+58	64	0.001398366442	1
+58	64	0.001398366442	0
+58	69	0.001408366442	0
+58	69	0.001408366442	2
+58	73	0.001712366442	2
+58	73	0.001712366442	0
+58	81	0.001758366442	0
+58	81	0.001758366442	2
+58	84	0.001796366442	2
+58	84	0.001796366442	0
+58	98	0.001807255166	0
+58	98	0.001807255166	1
+58	103	0.002111255166	1
+58	103	0.002111255166	0
+61	104	0.002111255166	0.000712888724
+62	22	0.000066444362	30.467133188048
+88	9	0	65535
+89	9	0	65535
+91	9	0	0
+102	9	0	0

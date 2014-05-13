@@ -1,0 +1,305 @@
+file 309530 1399864416                                          
+version 2
+run Que60-0-20140512-12:12:42-8199
+attr configname Que60
+attr datetime 20140512-12:12:42
+attr experiment Que60
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Experience1
+attr processid 8199
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+vector 11  Experience1.client1.ppp[0].queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 12  Experience1.client1.ppp[0].ppp  txState:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "tx state, vector"
+vector 37  Experience1.client2.ppp[0].queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 38  Experience1.client2.ppp[0].ppp  txState:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "tx state, vector"
+vector 62  Experience1.server.ppp[0].queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 63  Experience1.server.ppp[0].ppp  txState:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "tx state, vector"
+vector 78  Experience1.router.ppp[0].queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 79  Experience1.router.ppp[0].ppp  txState:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "tx state, vector"
+vector 89  Experience1.router.ppp[1].queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 90  Experience1.router.ppp[1].ppp  txState:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "tx state, vector"
+vector 100  Experience1.router.ppp[2].queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 101  Experience1.router.ppp[2].ppp  txState:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "tx state, vector"
+vector 147  Experience1.client1.tcp  tcpRcvQueueBytes  ETV
+vector 134  Experience1.client1.tcp  "advertised window"  ETV
+vector 133  Experience1.client1.tcp  "receive window"  ETV
+vector 136  Experience1.client1.tcp  "sent ack"  ETV
+vector 8  Experience1.client1.ppp[0].queue  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr title  "received packets, vector(packetBytes)"
+vector 10  Experience1.client1.ppp[0].queue  queueingTime:vector  ETV
+attr interpolationmode  none
+attr title  "queueing time, vector"
+vector 17  Experience1.client1.ppp[0].ppp  rcvdPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, vector(packetBytes)"
+vector 13  Experience1.client1.ppp[0].ppp  txPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets transmitted, vector(packetBytes)"
+vector 81  Experience1.router.ppp[0].ppp  rxPkOk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, vector(packetBytes)"
+vector 85  Experience1.router.ppp[0].ppp  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 97  Experience1.router.ppp[2].queue  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr title  "received packets, vector(packetBytes)"
+vector 99  Experience1.router.ppp[2].queue  queueingTime:vector  ETV
+attr interpolationmode  none
+attr title  "queueing time, vector"
+vector 106  Experience1.router.ppp[2].ppp  rcvdPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, vector(packetBytes)"
+vector 102  Experience1.router.ppp[2].ppp  txPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets transmitted, vector(packetBytes)"
+vector 65  Experience1.server.ppp[0].ppp  rxPkOk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, vector(packetBytes)"
+vector 69  Experience1.server.ppp[0].ppp  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 113  Experience1.server.tcp  "rcvd seq"  ETV
+vector 114  Experience1.server.tcp  "rcvd ack"  ETV
+vector 110  Experience1.server.tcp  "advertised window"  ETV
+vector 108  Experience1.server.tcp  "send window"  ETV
+vector 123  Experience1.server.tcp  tcpRcvQueueBytes  ETV
+vector 109  Experience1.server.tcp  "receive window"  ETV
+vector 112  Experience1.server.tcp  "sent ack"  ETV
+vector 59  Experience1.server.ppp[0].queue  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr title  "received packets, vector(packetBytes)"
+vector 61  Experience1.server.ppp[0].queue  queueingTime:vector  ETV
+attr interpolationmode  none
+attr title  "queueing time, vector"
+vector 68  Experience1.server.ppp[0].ppp  rcvdPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, vector(packetBytes)"
+vector 64  Experience1.server.ppp[0].ppp  txPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets transmitted, vector(packetBytes)"
+vector 103  Experience1.router.ppp[2].ppp  rxPkOk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, vector(packetBytes)"
+vector 107  Experience1.router.ppp[2].ppp  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 75  Experience1.router.ppp[0].queue  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr title  "received packets, vector(packetBytes)"
+vector 77  Experience1.router.ppp[0].queue  queueingTime:vector  ETV
+attr interpolationmode  none
+attr title  "queueing time, vector"
+vector 84  Experience1.router.ppp[0].ppp  rcvdPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, vector(packetBytes)"
+vector 80  Experience1.router.ppp[0].ppp  txPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets transmitted, vector(packetBytes)"
+vector 14  Experience1.client1.ppp[0].ppp  rxPkOk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, vector(packetBytes)"
+vector 18  Experience1.client1.ppp[0].ppp  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 137  Experience1.client1.tcp  "rcvd seq"  ETV
+vector 138  Experience1.client1.tcp  "rcvd ack"  ETV
+vector 132  Experience1.client1.tcp  "send window"  ETV
+vector 115  Experience1.server.tcp  "unacked bytes"  ETV
+vector 19  Experience1.client2.udpApp[0]  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 24  Experience1.client2.udp  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 34  Experience1.client2.ppp[0].queue  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr title  "received packets, vector(packetBytes)"
+vector 36  Experience1.client2.ppp[0].queue  queueingTime:vector  ETV
+attr interpolationmode  none
+attr title  "queueing time, vector"
+vector 43  Experience1.client2.ppp[0].ppp  rcvdPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, vector(packetBytes)"
+vector 39  Experience1.client2.ppp[0].ppp  txPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets transmitted, vector(packetBytes)"
+vector 92  Experience1.router.ppp[1].ppp  rxPkOk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, vector(packetBytes)"
+vector 96  Experience1.router.ppp[1].ppp  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 50  Experience1.server.udp  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, vector(packetBytes)"
+vector 51  Experience1.server.udp  passedUpPk:vector(count)  ETV
+attr interpolationmode  none
+attr title  "packets passed up, vector(count)"
+vector 47  Experience1.server.udpApp[0]  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, vector(packetBytes)"
+vector 48  Experience1.server.udpApp[0]  endToEndDelay:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, vector"
+attr unit  s
+vector 1  Experience1.client1.tcpApp[0]  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 135  Experience1.client1.tcp  "sent seq"  ETV
+vector 139  Experience1.client1.tcp  "unacked bytes"  ETV
+vector 116  Experience1.server.tcp  "rcvd dupAcks"  ETV
+vector 45  Experience1.server.tcpApp[0]  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, vector(packetBytes)"
+vector 46  Experience1.server.tcpApp[0]  endToEndDelay:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, vector"
+attr unit  s
+vector 151  Experience1.client1.tcp  "measured RTT"  ETV
+vector 152  Experience1.client1.tcp  "smoothed RTT"  ETV
+vector 153  Experience1.client1.tcp  RTTVAR  ETV
+vector 154  Experience1.client1.tcp  RTO  ETV
+vector 149  Experience1.client1.tcp  cwnd  ETV
+vector 140  Experience1.client1.tcp  "rcvd dupAcks"  ETV
+vector 98  Experience1.router.ppp[2].queue  dropPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, vector(packetBytes)"
+1	10394 19 1721 1721 1 1 1 104857600 104857600 104857600 1.099511627776e+16
+8	10413 4289 19 6256 0 1.999299294075 161 40 1064 169260 180006800
+10	14702 5624 19 6256 0 1.999299294075 161 0 0.034927764636 1.796041407555 0.034850712512661
+11	20326 6378 0 5337 0 1.808808470478 257 0 9 828 3856
+12	26704 7971 0 6265 0 2.003583294074 323 0 1 161 161
+13	34675 4449 20 6257 0 1.999299294075 161 47 1071 170387 182384329
+14	39124 2503 39 6252 0.060888 1.999299294075 97 47 51 4563 214665
+17	41627 4449 20 6257 0 1.999299294075 161 40 1064 169260 180006800
+18	46076 2503 39 6252 0.060888 1.999299294075 97 40 44 3884 155536
+19	48579 4413 56 6266 0.1 2.004 239 1024 1024 244736 250609664
+24	52992 4413 58 6267 0.1 2.004 239 1032 1032 246648 254540736
+34	57405 4413 60 6269 0.1 2.004 239 1052 1052 251428 264502256
+36	61818 3696 60 6269 0.1 2.004 239 0 0 0 0
+37	65514 9 0 0 0 0 1 0 0 0 0
+38	65523 8159 0 6270 0 2.004 478 0 1 239 239
+39	73682 4413 61 6270 0.1 2.004 239 1059 1059 253101 268033959
+43	78095 4413 61 6270 0.1 2.004 239 1052 1052 251428 264502256
+45	82508 2791 1811 6245 1.040259529411 1.999017176427 100 1024 1024 102400 104857600
+46	85299 2491 1811 6245 1.040259529411 1.999017176427 100 0 0 0 0
+47	87790 5423 109 6223 0.139219529411 1.993977176427 196 1024 1024 200704 205520896
+48	93213 7378 109 6223 0.139219529411 1.993977176427 196 0.039219529411 0.333977176427 14.96491952802 2.2497002044686
+50	100591 5423 108 6222 0.139219529411 1.993977176427 196 1032 1032 202272 208744704
+51	106014 5119 108 6222 0.139219529411 1.993977176427 196 1 196 19306 2529086
+59	111133 2609 31 6247 0.030444 1.999017176427 101 40 44 4044 161936
+61	113742 2508 31 6247 0.030444 1.999017176427 101 0 0 0 0
+62	116250 9 0 0 0 0 1 0 0 0 0
+63	116259 5023 0 6251 0 1.999238352897 203 0 1 101 101
+64	121282 2609 32 6248 0.030444 1.999017176427 101 47 51 4751 223501
+65	123891 8283 27 6271 0.030444 2.004057176427 299 47 1071 315833 335666227
+68	132174 2609 32 6248 0.030444 1.999017176427 101 40 44 4044 161936
+69	134783 8283 27 6271 0.030444 2.004057176427 299 40 1064 313740 331259216
+75	143066 2529 36 6228 0.050684 1.994151294075 98 40 44 3924 157136
+77	145595 2431 36 6228 0.050684 1.994151294075 98 0 0 0 0
+78	148026 9 0 0 0 0 1 0 0 0 0
+79	148035 4871 0 6233 0 1.994339294075 197 0 1 98 98
+80	152906 2529 37 6229 0.050684 1.994151294075 98 47 51 4610 216874
+81	155435 4443 22 6262 0.010204 2.003559764663 160 47 1071 169316 181237288
+84	159878 2529 37 6229 0.050684 1.994151294075 98 40 44 3924 157136
+85	162407 4443 22 6262 0.010204 2.003559764663 160 40 1064 168196 178874704
+89	166850 9 0 0 0 0 1 0 0 0 0
+90	166859 9 0 0 0 0 1 0 0 0 0
+92	166868 5148 69 6259 0.114236 2.002236 237 1059 1059 250983 265790997
+96	172016 5148 69 6259 0.114236 2.002236 237 1052 1052 249324 262288848
+97	177164 9591 24 6264 0.010204 2.003559764663 397 40 1064 417520 441163552
+98	186755 885 4640 6264 1.682236 2.003559764663 34 1052 1064 36044 38211952
+99	187640 8908 24 6249 0.010204 1.999120705838 303 0 0.300884705838 21.951614117399 4.4037716162891
+100	196548 10170 0 6261 0 2.002236 403 0 60 14111 703273
+101	206718 14775 0 6250 0 1.999120705838 606 0 1 303 303
+102	221493 7907 25 6250 0.010204 1.999120705838 303 47 1071 320093 340203271
+103	229400 2627 34 6226 0.050684 1.994151294075 98 47 51 4610 216874
+106	232027 7907 25 6250 0.010204 1.999120705838 303 40 1064 317972 335736816
+107	239934 2627 34 6226 0.050684 1.994151294075 98 40 44 3924 157136
+108	242561 49 29 54 0.030444 0.09129717647 2 65535 65535 131070 8589672450
+109	242610 3043 29 6273 0.030444 2.004057176427 102 65535 65535 6684570 438073294950
+110	245653 3133 29 6273 0.030444 2.004057176427 103 65536 168960 12024832 1499219361792
+112	248786 3034 29 6273 0.030444 2.004057176427 102 1 103425 5274726 365492762726
+113	251820 3052 29 6273 0.030444 2.004057176427 103 0 102401 5171302 354796032102
+114	254872 2964 29 6273 0.030444 2.004057176427 103 0 7612 776424 5910139488
+115	257836 23 54 54 0.09129717647 0.09129717647 1 0 0 0 0
+116	257859 2617 1810 6273 1.040259529411 2.004057176427 101 0 0 0 0
+123	260476 5252 29 6273 0.030444 2.004057176427 203 0 0 0 0
+132	265728 2891 41 6254 0.060888 1.999299294075 97 65535 65535 6356895 416599113825
+133	268619 4776 17 6254 0 1.999299294075 161 65535 65535 10551135 691468632225
+134	273395 4798 17 6254 0 1.999299294075 162 65535 73147 11842202 865722697274
+135	278193 4787 1722 6254 1 1.999299294075 159 1 161793 12862623 1391778629791
+136	282980 4612 17 6254 0 1.999299294075 161 0 7612 1217920 9270807040
+137	287592 2794 41 6254 0.060888 1.999299294075 97 7611 7612 738363 5620411545
+138	290386 2878 41 6254 0.060888 1.999299294075 97 1 98305 4767841 314095796321
+139	293264 5733 1722 6254 1 1.999299294075 193 0 64512 8352768 449332641792
+140	298997 2485 1881 6254 1.070668705881 1.999299294075 96 0 0 0 0
+147	301482 4132 17 6254 0 1.999299294075 161 0 0 0 0
+149	305614 2861 1881 6254 1.070668705881 1.999299294075 96 2048 66032 4300032 236627641776
+151	308475 243 1881 5039 1.070668705881 1.753299294088 7 0.070668705881 0.250983529398 0.753299294088 0.107816829895
+152	308718 271 1881 5039 1.070668705881 1.753299294088 7 0.008833588235 0.073680465616 0.237536034749 0.010905437220047
+153	308989 271 1881 5039 1.070668705881 1.753299294088 7 0.351540777248 0.665083588236 3.378658284242 1.7116753132327
+154	309260 270 1881 5039 1.070668705881 1.753299294088 7 1.479843574608 2.669167941179 13.752169171717 28.204985206662

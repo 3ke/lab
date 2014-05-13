@@ -1,0 +1,179 @@
+file 14075 1399966732                                           
+version 2
+run Assignment1-0-20140513-16:38:40-30416
+attr configname Assignment1
+attr datetime 20140513-16:38:40
+attr experiment Assignment1
+attr inifile assignment1.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network assignment1
+attr processid 30416
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+vector 7  assignment1.host[0].wlan[0].mgmt  dataQueueLen:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "data queue length, vector"
+vector 25  assignment1.host[1].wlan[0].mgmt  dataQueueLen:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "data queue length, vector"
+vector 35  assignment1.ap.wlan[0].mgmt  dataQueueLen:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "data queue length, vector"
+vector 46  assignment1.host[0].wlan[0].mac  RadioState  ETV
+attr enum  "IDLE=0, OFF=4, RECV=1, SLEEP=3, TRANSMIT=2"
+attr enumname  RadioState
+vector 45  assignment1.host[0].wlan[0].mac  State  ETV
+attr enum  "BACKOFF=3, DEFER=1, IDLE=0, RECEIVE=8, WAITACK=4, WAITAIFS=2, WAITCTS=6, WAITMULTICAST=5, WAITSIFS=7"
+attr enumname  Ieee80211Mac
+vector 52  assignment1.host[1].wlan[0].mac  RadioState  ETV
+attr enum  "IDLE=0, OFF=4, RECV=1, SLEEP=3, TRANSMIT=2"
+attr enumname  RadioState
+vector 51  assignment1.host[1].wlan[0].mac  State  ETV
+attr enum  "BACKOFF=3, DEFER=1, IDLE=0, RECEIVE=8, WAITACK=4, WAITAIFS=2, WAITCTS=6, WAITMULTICAST=5, WAITSIFS=7"
+attr enumname  Ieee80211Mac
+vector 58  assignment1.ap.wlan[0].mac  RadioState  ETV
+attr enum  "IDLE=0, OFF=4, RECV=1, SLEEP=3, TRANSMIT=2"
+attr enumname  RadioState
+vector 57  assignment1.ap.wlan[0].mac  State  ETV
+attr enum  "BACKOFF=3, DEFER=1, IDLE=0, RECEIVE=8, WAITACK=4, WAITAIFS=2, WAITCTS=6, WAITMULTICAST=5, WAITSIFS=7"
+attr enumname  Ieee80211Mac
+vector 13  assignment1.host[0].wlan[0].radio  bitrate:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, vector"
+attr unit  bps
+vector 15  assignment1.host[0].wlan[0].radio  radioState:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), vector"
+vector 14  assignment1.host[0].wlan[0].radio  channelNo:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "channel no, vector"
+vector 31  assignment1.host[1].wlan[0].radio  bitrate:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, vector"
+attr unit  bps
+vector 33  assignment1.host[1].wlan[0].radio  radioState:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), vector"
+vector 32  assignment1.host[1].wlan[0].radio  channelNo:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "channel no, vector"
+vector 41  assignment1.ap.wlan[0].radio  bitrate:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, vector"
+attr unit  bps
+vector 43  assignment1.ap.wlan[0].radio  radioState:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), vector"
+vector 42  assignment1.ap.wlan[0].radio  channelNo:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "channel no, vector"
+vector 102  assignment1.host[1].tcp  tcpRcvQueueBytes  ETV
+vector 89  assignment1.host[1].tcp  "advertised window"  ETV
+vector 88  assignment1.host[1].tcp  "receive window"  ETV
+vector 91  assignment1.host[1].tcp  "sent ack"  ETV
+vector 20  assignment1.host[1].networkLayer.arp  sentReq:vector  ETV
+attr title  "ARP request sent, vector"
+vector 29  assignment1.host[1].wlan[0].mac  rcvdPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, vector(packetBytes)"
+vector 28  assignment1.host[1].wlan[0].mac  sentDownPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, vector(packetBytes)"
+vector 50  assignment1.host[0].wlan[0].radio  snirVector  ETV
+vector 12  assignment1.host[0].wlan[0].mac  rcvdPkFromLL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, vector(packetBytes)"
+vector 62  assignment1.ap.wlan[0].radio  snirVector  ETV
+vector 40  assignment1.ap.wlan[0].mac  rcvdPkFromLL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, vector(packetBytes)"
+vector 37  assignment1.ap.wlan[0].mac  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 39  assignment1.ap.wlan[0].mac  rcvdPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, vector(packetBytes)"
+vector 38  assignment1.ap.wlan[0].mac  sentDownPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, vector(packetBytes)"
+vector 56  assignment1.host[1].wlan[0].radio  snirVector  ETV
+vector 30  assignment1.host[1].wlan[0].mac  rcvdPkFromLL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, vector(packetBytes)"
+vector 55  assignment1.host[1].wlan[0].mac  "Mac delay AC0"  ETV
+vector 9  assignment1.host[0].wlan[0].mac  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 3  assignment1.host[0].networkLayer.arp  sentReply:vector  ETV
+attr title  "ARP replies sent, vector"
+vector 11  assignment1.host[0].wlan[0].mac  rcvdPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, vector(packetBytes)"
+vector 10  assignment1.host[0].wlan[0].mac  sentDownPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, vector(packetBytes)"
+vector 49  assignment1.host[0].wlan[0].mac  "Mac delay AC0"  ETV
+vector 27  assignment1.host[1].wlan[0].mac  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 61  assignment1.ap.wlan[0].mac  "Mac delay AC0"  ETV
+3	6437 22 51 51 0.001331905402 0.001331905402 1 1 1 1 1
+7	6459 8 0 0 0 0 1 0 0 0 0
+9	6467 23 48 48 0.001331905402 0.001331905402 1 70 70 70 4900
+10	6490 24 56 56 0.001359905402 0.001359905402 1 70 70 70 4900
+11	6514 24 54 54 0.001331905402 0.001331905402 1 70 70 70 4900
+12	6538 145 20 102 0.000066257864 0.002111068668 6 14 70 252 15288
+13	6683 16 0 0 0 0 1 54000000 54000000 54000000 2.916e+15
+14	6699 9 0 0 0 0 1 0 0 0 0
+15	6708 332 0 101 0 0.002111068668 15 0 2 8 10
+20	7040 10 10 10 0 0 1 1 1 1 1
+25	7050 9 0 0 0 0 1 0 0 0 0
+27	7059 24 86 86 0.001796810804 0.001796810804 1 70 70 70 4900
+28	7083 42 14 95 0.000028 0.001806810804 2 14 70 84 5096
+29	7125 35 13 91 0 0.001796810804 2 70 86 156 12296
+30	7160 120 33 86 0.000380888724 0.001796810804 5 14 70 238 15092
+31	7280 16 0 0 0 0 1 54000000 54000000 54000000 2.916e+15
+32	7296 9 0 0 0 0 1 0 0 0 0
+33	7305 319 0 99 0 0.002110810804 15 0 2 9 13
+35	7624 9 0 0 0 0 1 0 0 0 0
+37	7633 48 23 65 0.000066444362 0.001398366442 2 70 70 140 9800
+38	7681 96 26 80 0.000076444362 0.001758366442 4 14 70 168 10192
+39	7777 48 25 67 0.000066444362 0.001398366442 2 70 70 140 9800
+40	7825 73 23 104 0.000066444362 0.002111255166 3 14 70 154 9996
+41	7898 16 0 0 0 0 1 54000000 54000000 54000000 2.916e+15
+42	7914 9 0 0 0 0 1 0 0 0 0
+43	7923 332 0 103 0 0.002111255166 15 0 2 11 19
+45	8255 1266 0 102 0 0.002111068668 56 0 4 74 224
+46	9521 664 0 101 0 0.002111068668 30 0 2 16 20
+49	10185 35 77 77 0.001712827482 0.001712827482 1 0.00038092208 0.00038092208 0.00038092208 1.4510163103153e-07
+50	10220 37 19 19 0.000066257864 0.000066257864 1 35.194055703166 35.194055703166 35.194055703166 1238.6215568376
+51	10257 1152 0 99 0 0.002110810804 54 0 7 76 306
+52	11409 638 0 99 0 0.002110810804 30 0 2 18 26
+55	12047 36 33 33 0.000380888724 0.000380888724 1 0.000380888724 0.000380888724 0.000380888724 1.4507622007035e-07
+56	12083 37 32 32 0.000380888724 0.000380888724 1 30.467133188048 30.467133188048 30.467133188048 928.24620469825
+57	12120 1172 0 104 0 0.002111255166 52 0 7 140 570
+58	13292 664 0 103 0 0.002111255166 30 0 2 22 38
+61	13956 37 104 104 0.002111255166 0.002111255166 1 0.000712888724 0.000712888724 0.000712888724 5.0821033280635e-07
+62	13993 37 22 22 0.000066444362 0.000066444362 1 30.467133188048 30.467133188048 30.467133188048 928.24620469825
+88	14030 13 9 9 0 0 1 65535 65535 65535 4294836225
+89	14043 13 9 9 0 0 1 65535 65535 65535 4294836225
+91	14056 9 9 9 0 0 1 0 0 0 0
+102	14065 10 9 9 0 0 1 0 0 0 0

@@ -1,0 +1,204 @@
+file 115371 1399886036                                          
+version 2
+run General-0-20140512-18:11:15-15859
+attr configname General
+attr datetime 20140512-18:11:15
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Lan80211
+attr processid 15859
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+vector 10  Lan80211.host[0].wlan[0].mgmt  dataQueueLen:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "data queue length, vector"
+vector 30  Lan80211.host[1].wlan[0].mgmt  dataQueueLen:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "data queue length, vector"
+vector 40  Lan80211.ap.wlan[0].mgmt  dataQueueLen:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "data queue length, vector"
+vector 51  Lan80211.host[0].wlan[0].mac  RadioState  ETV
+attr enum  "IDLE=0, OFF=4, RECV=1, SLEEP=3, TRANSMIT=2"
+attr enumname  RadioState
+vector 50  Lan80211.host[0].wlan[0].mac  State  ETV
+attr enum  "BACKOFF=3, DEFER=1, IDLE=0, RECEIVE=8, WAITACK=4, WAITAIFS=2, WAITCTS=6, WAITMULTICAST=5, WAITSIFS=7"
+attr enumname  Ieee80211Mac
+vector 57  Lan80211.host[1].wlan[0].mac  RadioState  ETV
+attr enum  "IDLE=0, OFF=4, RECV=1, SLEEP=3, TRANSMIT=2"
+attr enumname  RadioState
+vector 56  Lan80211.host[1].wlan[0].mac  State  ETV
+attr enum  "BACKOFF=3, DEFER=1, IDLE=0, RECEIVE=8, WAITACK=4, WAITAIFS=2, WAITCTS=6, WAITMULTICAST=5, WAITSIFS=7"
+attr enumname  Ieee80211Mac
+vector 63  Lan80211.ap.wlan[0].mac  RadioState  ETV
+attr enum  "IDLE=0, OFF=4, RECV=1, SLEEP=3, TRANSMIT=2"
+attr enumname  RadioState
+vector 62  Lan80211.ap.wlan[0].mac  State  ETV
+attr enum  "BACKOFF=3, DEFER=1, IDLE=0, RECEIVE=8, WAITACK=4, WAITAIFS=2, WAITCTS=6, WAITMULTICAST=5, WAITSIFS=7"
+attr enumname  Ieee80211Mac
+vector 16  Lan80211.host[0].wlan[0].radio  bitrate:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, vector"
+attr unit  bps
+vector 18  Lan80211.host[0].wlan[0].radio  radioState:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), vector"
+vector 17  Lan80211.host[0].wlan[0].radio  channelNo:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "channel no, vector"
+vector 36  Lan80211.host[1].wlan[0].radio  bitrate:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, vector"
+attr unit  bps
+vector 38  Lan80211.host[1].wlan[0].radio  radioState:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), vector"
+vector 37  Lan80211.host[1].wlan[0].radio  channelNo:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "channel no, vector"
+vector 46  Lan80211.ap.wlan[0].radio  bitrate:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, vector"
+attr unit  bps
+vector 48  Lan80211.ap.wlan[0].radio  radioState:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), vector"
+vector 47  Lan80211.ap.wlan[0].radio  channelNo:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "channel no, vector"
+vector 23  Lan80211.host[1].pingApp[0]  pingTxSeq:vector  ETV
+attr interpolationmode  none
+attr title  "ping tx seq, vector"
+vector 25  Lan80211.host[1].networkLayer.arp  sentReq:vector  ETV
+attr title  "ARP request sent, vector"
+vector 34  Lan80211.host[1].wlan[0].mac  rcvdPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, vector(packetBytes)"
+vector 33  Lan80211.host[1].wlan[0].mac  sentDownPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, vector(packetBytes)"
+vector 67  Lan80211.ap.wlan[0].radio  snirVector  ETV
+vector 45  Lan80211.ap.wlan[0].mac  rcvdPkFromLL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, vector(packetBytes)"
+vector 42  Lan80211.ap.wlan[0].mac  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 44  Lan80211.ap.wlan[0].mac  rcvdPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, vector(packetBytes)"
+vector 55  Lan80211.host[0].wlan[0].radio  snirVector  ETV
+vector 15  Lan80211.host[0].wlan[0].mac  rcvdPkFromLL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, vector(packetBytes)"
+vector 43  Lan80211.ap.wlan[0].mac  sentDownPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, vector(packetBytes)"
+vector 61  Lan80211.host[1].wlan[0].radio  snirVector  ETV
+vector 35  Lan80211.host[1].wlan[0].mac  rcvdPkFromLL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, vector(packetBytes)"
+vector 60  Lan80211.host[1].wlan[0].mac  "Mac delay AC0"  ETV
+vector 12  Lan80211.host[0].wlan[0].mac  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 6  Lan80211.host[0].networkLayer.arp  sentReply:vector  ETV
+attr title  "ARP replies sent, vector"
+vector 14  Lan80211.host[0].wlan[0].mac  rcvdPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, vector(packetBytes)"
+vector 13  Lan80211.host[0].wlan[0].mac  sentDownPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, vector(packetBytes)"
+vector 54  Lan80211.host[0].wlan[0].mac  "Mac delay AC0"  ETV
+vector 32  Lan80211.host[1].wlan[0].mac  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 66  Lan80211.ap.wlan[0].mac  "Mac delay AC0"  ETV
+vector 24  Lan80211.host[1].pingApp[0]  pingRxSeq:vector  ETV
+attr interpolationmode  none
+attr title  "ping rx seq, vector"
+vector 20  Lan80211.host[1].pingApp[0]  rtt:vector  ETV
+attr interpolationmode  none
+attr title  "ping round-trip time, vector"
+attr unit  s
+vector 19  Lan80211.host[0].wlan[0].radio  lossRate:vector  ETV
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, vector"
+vector 39  Lan80211.host[1].wlan[0].radio  lossRate:vector  ETV
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, vector"
+vector 59  Lan80211.host[1].wlan[0].mac  "throughput AC0"  ETV
+vector 58  Lan80211.host[1].wlan[0].mac  "jitter AC0"  ETV
+vector 53  Lan80211.host[0].wlan[0].mac  "throughput AC0"  ETV
+vector 52  Lan80211.host[0].wlan[0].mac  "jitter AC0"  ETV
+vector 65  Lan80211.ap.wlan[0].mac  "throughput AC0"  ETV
+vector 64  Lan80211.ap.wlan[0].mac  "jitter AC0"  ETV
+6	7119 22 54 54 0.008100609436 0.008100609436 1 1 1 1 1
+10	7141 9 0 0 0 0 1 0 0 0 0
+12	7150 312 51 1357 0.008100609436 0.107934612701 12 70 118 1368 158064
+13	7462 590 59 1375 0.008128609436 0.108276612701 23 14 118 1522 160220
+14	8052 312 57 1363 0.008100609436 0.107934612701 12 70 118 1368 158064
+15	8364 1842 26 1428 0.006736354759 0.110307309398 72 14 118 4608 481248
+16	10206 15 0 0 0 0 1 2000000 2000000 2000000 4000000000000
+17	10221 9 0 0 0 0 1 0 0 0 0
+18	10230 4621 0 1445 0 0.116264358652 192 0 2 119 165
+19	14851 24 978 978 0.077242610478 0.077242610478 1 0 0 0 0
+20	14875 411 206 1415 0.013513525891 0.109992588512 11 0.003711941451 0.007277888928 0.044694347984 0.00019297216227117
+23	15286 293 10 1437 0.006235636963 0.116235636963 12 0 11 66 506
+24	15579 269 206 1415 0.013513525891 0.109992588512 11 0 10 55 385
+25	15848 23 12 12 0.006235636963 0.006235636963 1 1 1 1 1
+30	15871 9 0 0 0 0 1 0 0 0 0
+32	15880 314 91 1411 0.009451581626 0.109992588512 12 70 118 1368 158064
+33	16194 644 16 1442 0.006263636963 0.116263636963 25 14 118 1654 174340
+34	16838 339 15 1441 0.006235636963 0.116235636963 13 70 118 1486 171988
+35	17177 1822 34 1411 0.007050342349 0.109992588512 71 14 118 4594 481052
+36	18999 15 0 0 0 0 1 2000000 2000000 2000000 4000000000000
+37	19014 9 0 0 0 0 1 0 0 0 0
+38	19023 4634 0 1443 0 0.116263636963 192 0 2 121 171
+39	23657 25 1007 1007 0.078249328597 0.078249328597 1 0 0 0 0
+40	23682 9 0 0 0 0 1 0 0 0 0
+42	23691 622 22 1384 0.006735989656 0.108941233822 24 70 118 2736 316128
+43	24313 1222 28 1404 0.006745989656 0.109328233822 48 14 118 3072 320832
+44	25535 622 24 1386 0.006735989656 0.108941233822 24 70 118 2736 316128
+45	26157 1204 22 1426 0.006735989656 0.110306943259 47 14 118 3058 320636
+46	27361 15 0 0 0 0 1 2000000 2000000 2000000 4000000000000
+47	27376 9 0 0 0 0 1 0 0 0 0
+48	27385 4608 0 1444 0 0.116263991767 192 0 2 144 240
+50	31993 18320 0 1445 0 0.116264358652 760 0 7 1220 4244
+51	50313 9242 0 1445 0 0.116264358652 384 0 2 237 329
+52	59555 38 1302 1302 0.100288854559 0.100288854559 1 0.000524000076 0.000524000076 0.000524000076 2.7457607964801e-07
+53	59593 38 1302 1302 0.100288854559 0.100288854559 1 99711.97740739 99711.97740739 99711.97740739 9942478438.4918
+54	59631 437 81 1399 0.00891584884 0.109255855094 12 0.000815239404 0.00133923948 0.015366880592 1.9914933560011e-05
+55	60068 36 25 25 0.006736354759 0.006736354759 1 26.30185254917 26.30185254917 26.30185254917 691.78744751829
+56	60104 18618 0 1443 0 0.116263636963 770 0 7 1484 4756
+57	78722 9268 0 1443 0 0.116263636963 384 0 2 240 338
+58	87990 38 1301 1301 0.100288587646 0.100288587646 1 0.000505999508 0.000505999508 0.000505999508 2.5603550209624e-07
+59	88028 39 1301 1301 0.100288587646 0.100288587646 1 99712.242785771 99712.242785771 99712.242785771 9942531361.3685
+60	88067 443 34 1341 0.007050342349 0.107242346197 12 0.000814705386 0.001320704894 0.012202467423 1.2542570235092e-05
+61	88510 37 33 33 0.007050342349 0.007050342349 1 32.473933875142 32.473933875142 32.473933875142 1054.5563813271
+62	88547 16640 0 1444 0 0.116263991767 692 0 7 1974 7734
+63	105187 9216 0 1444 0 0.116263991767 384 0 2 287 479
+64	114403 38 1303 1303 0.100288941995 0.100288941995 1 0.000219001524 0.000219001524 0.000219001524 4.7961667514323e-08
+65	114441 39 1303 1303 0.100288941995 0.100288941995 1 190010.97848804 190010.97848804 190010.97848804 36104171945.982
+66	114480 854 107 1426 0.009765934114 0.110306943259 23 0.001164704976 0.0013837065 0.030541109319 4.0592258919556e-05
+67	115334 37 21 21 0.006735989656 0.006735989656 1 32.473933875142 32.473933875142 32.473933875142 1054.5563813271

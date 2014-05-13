@@ -1,0 +1,50 @@
+file 1529 1399628362                                            
+version 2
+run default_tcp-0-20140509-18:39:19-26556
+attr configname default_tcp
+attr datetime 20140509-18:39:19
+attr experiment default_tcp
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Experience1
+attr processid 26556
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+vector 11  Experience1.client1.ppp[0].queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 12  Experience1.client1.ppp[0].ppp  txState:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "tx state, vector"
+vector 37  Experience1.client2.ppp[0].queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 38  Experience1.client2.ppp[0].ppp  txState:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "tx state, vector"
+vector 62  Experience1.server.ppp[0].queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 63  Experience1.server.ppp[0].ppp  txState:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "tx state, vector"
+vector 73  Experience1.server.ppp[1].queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 74  Experience1.server.ppp[1].ppp  txState:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "tx state, vector"
+11	1457 9 0 0 0 0 1 0 0 0 0
+12	1466 9 0 0 0 0 1 0 0 0 0
+37	1475 9 0 0 0 0 1 0 0 0 0
+38	1484 9 0 0 0 0 1 0 0 0 0
+62	1493 9 0 0 0 0 1 0 0 0 0
+63	1502 9 0 0 0 0 1 0 0 0 0
+73	1511 9 0 0 0 0 1 0 0 0 0
+74	1520 9 0 0 0 0 1 0 0 0 0

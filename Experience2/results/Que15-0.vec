@@ -1,0 +1,337 @@
+version 2
+run Que15-0-20140512-12:53:36-10574
+attr configname Que15
+attr datetime 20140512-12:53:36
+attr experiment Que15
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Experience2
+attr processid 10574
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+vector 11  Experience2.client.ppp[0].queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 12  Experience2.client.ppp[0].ppp  txState:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "tx state, vector"
+vector 29  Experience2.server.ppp[0].queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 30  Experience2.server.ppp[0].ppp  txState:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "tx state, vector"
+vector 45  Experience2.router1.ppp[0].queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 46  Experience2.router1.ppp[0].ppp  txState:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "tx state, vector"
+vector 56  Experience2.router1.ppp[1].queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 57  Experience2.router1.ppp[1].ppp  txState:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "tx state, vector"
+vector 72  Experience2.router2.ppp[0].queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 73  Experience2.router2.ppp[0].ppp  txState:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "tx state, vector"
+vector 83  Experience2.router2.ppp[1].queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 84  Experience2.router2.ppp[1].ppp  txState:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "tx state, vector"
+vector 130  Experience2.client.tcp  tcpRcvQueueBytes  ETV
+vector 117  Experience2.client.tcp  "advertised window"  ETV
+vector 116  Experience2.client.tcp  "receive window"  ETV
+vector 119  Experience2.client.tcp  "sent ack"  ETV
+vector 8  Experience2.client.ppp[0].queue  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr title  "received packets, vector(packetBytes)"
+vector 10  Experience2.client.ppp[0].queue  queueingTime:vector  ETV
+attr interpolationmode  none
+attr title  "queueing time, vector"
+vector 17  Experience2.client.ppp[0].ppp  rcvdPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, vector(packetBytes)"
+vector 13  Experience2.client.ppp[0].ppp  txPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets transmitted, vector(packetBytes)"
+vector 48  Experience2.router1.ppp[0].ppp  rxPkOk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, vector(packetBytes)"
+vector 52  Experience2.router1.ppp[0].ppp  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 53  Experience2.router1.ppp[1].queue  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr title  "received packets, vector(packetBytes)"
+vector 55  Experience2.router1.ppp[1].queue  queueingTime:vector  ETV
+attr interpolationmode  none
+attr title  "queueing time, vector"
+vector 62  Experience2.router1.ppp[1].ppp  rcvdPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, vector(packetBytes)"
+vector 58  Experience2.router1.ppp[1].ppp  txPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets transmitted, vector(packetBytes)"
+vector 75  Experience2.router2.ppp[0].ppp  rxPkOk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, vector(packetBytes)"
+vector 79  Experience2.router2.ppp[0].ppp  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 80  Experience2.router2.ppp[1].queue  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr title  "received packets, vector(packetBytes)"
+vector 82  Experience2.router2.ppp[1].queue  queueingTime:vector  ETV
+attr interpolationmode  none
+attr title  "queueing time, vector"
+vector 89  Experience2.router2.ppp[1].ppp  rcvdPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, vector(packetBytes)"
+vector 85  Experience2.router2.ppp[1].ppp  txPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets transmitted, vector(packetBytes)"
+vector 32  Experience2.server.ppp[0].ppp  rxPkOk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, vector(packetBytes)"
+vector 36  Experience2.server.ppp[0].ppp  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 96  Experience2.server.tcp  "rcvd seq"  ETV
+vector 97  Experience2.server.tcp  "rcvd ack"  ETV
+vector 93  Experience2.server.tcp  "advertised window"  ETV
+vector 91  Experience2.server.tcp  "send window"  ETV
+vector 106  Experience2.server.tcp  tcpRcvQueueBytes  ETV
+vector 92  Experience2.server.tcp  "receive window"  ETV
+vector 95  Experience2.server.tcp  "sent ack"  ETV
+vector 26  Experience2.server.ppp[0].queue  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr title  "received packets, vector(packetBytes)"
+vector 28  Experience2.server.ppp[0].queue  queueingTime:vector  ETV
+attr interpolationmode  none
+attr title  "queueing time, vector"
+vector 35  Experience2.server.ppp[0].ppp  rcvdPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, vector(packetBytes)"
+vector 31  Experience2.server.ppp[0].ppp  txPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets transmitted, vector(packetBytes)"
+vector 86  Experience2.router2.ppp[1].ppp  rxPkOk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, vector(packetBytes)"
+vector 90  Experience2.router2.ppp[1].ppp  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 69  Experience2.router2.ppp[0].queue  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr title  "received packets, vector(packetBytes)"
+vector 71  Experience2.router2.ppp[0].queue  queueingTime:vector  ETV
+attr interpolationmode  none
+attr title  "queueing time, vector"
+vector 78  Experience2.router2.ppp[0].ppp  rcvdPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, vector(packetBytes)"
+vector 74  Experience2.router2.ppp[0].ppp  txPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets transmitted, vector(packetBytes)"
+vector 59  Experience2.router1.ppp[1].ppp  rxPkOk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, vector(packetBytes)"
+vector 63  Experience2.router1.ppp[1].ppp  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 42  Experience2.router1.ppp[0].queue  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr title  "received packets, vector(packetBytes)"
+vector 44  Experience2.router1.ppp[0].queue  queueingTime:vector  ETV
+attr interpolationmode  none
+attr title  "queueing time, vector"
+vector 51  Experience2.router1.ppp[0].ppp  rcvdPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, vector(packetBytes)"
+vector 47  Experience2.router1.ppp[0].ppp  txPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets transmitted, vector(packetBytes)"
+vector 14  Experience2.client.ppp[0].ppp  rxPkOk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, vector(packetBytes)"
+vector 18  Experience2.client.ppp[0].ppp  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 120  Experience2.client.tcp  "rcvd seq"  ETV
+vector 121  Experience2.client.tcp  "rcvd ack"  ETV
+vector 115  Experience2.client.tcp  "send window"  ETV
+vector 98  Experience2.server.tcp  "unacked bytes"  ETV
+vector 1  Experience2.client.tcpApp[0]  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 118  Experience2.client.tcp  "sent seq"  ETV
+vector 122  Experience2.client.tcp  "unacked bytes"  ETV
+1	67	1	104857600
+8	15	0	48
+8	50	0.082728	40
+8	70	1	1064
+10	15	0	0
+10	50	0.082728	0
+10	70	1	0
+11	0	0	0
+12	0	0	0
+12	16	0	1
+12	17	0.000044	0
+12	51	0.082728	1
+12	52	0.0827656	0
+12	71	1	1
+12	72	1.0008568	0
+13	16	0	55
+13	51	0.082728	47
+13	71	1	1071
+14	45	0.082728	55
+17	16	0	48
+17	51	0.082728	40
+17	71	1	1064
+18	45	0.082728	48
+26	32	0.041364	48
+28	32	0.041364	0
+29	0	0	0
+30	0	0	0
+30	33	0.041364	1
+30	34	0.041804	0
+31	33	0.041364	55
+32	28	0.041364	55
+32	63	0.1238936	47
+35	33	0.041364	48
+36	28	0.041364	48
+36	63	0.1238936	40
+42	42	0.072684	48
+44	42	0.072684	0
+45	0	0	0
+46	0	0	0
+46	43	0.072684	1
+46	44	0.072728	0
+47	43	0.072684	55
+48	18	0.010044	55
+48	53	0.0927656	47
+48	73	1.0108568	1071
+51	43	0.072684	48
+52	18	0.010044	48
+52	53	0.0927656	40
+52	73	1.0108568	1064
+53	20	0.010044	48
+53	55	0.0927656	40
+53	75	1.0108568	1064
+55	20	0.010044	0
+55	55	0.0927656	0
+55	75	1.0108568	0
+56	0	0	0
+57	0	0	0
+57	21	0.010044	1
+57	22	0.010924	0
+57	56	0.0927656	1
+57	57	0.0935176	0
+57	76	1.0108568	1
+57	77	1.027992799999	0
+58	21	0.010044	55
+58	56	0.0927656	47
+58	76	1.0108568	1071
+59	40	0.072684	55
+62	21	0.010044	48
+62	56	0.0927656	40
+62	76	1.0108568	1064
+63	40	0.072684	48
+69	37	0.051804	48
+71	37	0.051804	0
+72	0	0	0
+73	0	0	0
+73	38	0.051804	1
+73	39	0.052684	0
+74	38	0.051804	55
+75	23	0.030924	55
+75	58	0.1135176	47
+75	78	1.047992799999	1071
+78	38	0.051804	48
+79	23	0.030924	48
+79	58	0.1135176	40
+79	78	1.047992799999	1064
+80	25	0.030924	48
+80	60	0.1135176	40
+82	25	0.030924	0
+82	60	0.1135176	0
+83	0	0	0
+84	0	0	0
+84	26	0.030924	1
+84	27	0.031364	0
+84	61	0.1135176	1
+84	62	0.1138936	0
+85	26	0.030924	55
+85	61	0.1135176	47
+86	35	0.051804	55
+89	26	0.030924	48
+89	61	0.1135176	40
+90	35	0.051804	48
+91	30	0.041364	65535
+91	65	0.1238936	134215680
+92	30	0.041364	65535
+93	30	0.041364	65536
+93	30	0.041364	65536
+95	30	0.041364	1
+96	30	0.041364	0
+96	65	0.1238936	1
+97	30	0.041364	0
+97	65	0.1238936	10342
+98	65	0.1238936	0
+106	30	0.041364	0
+115	47	0.082728	65535
+116	13	0	65535
+116	47	0.082728	65535
+116	68	1	65535
+117	13	0	65535
+117	47	0.082728	75877
+117	47	0.082728	75877
+117	68	1	75877
+118	68	1	1
+119	13	0	0
+119	47	0.082728	10342
+119	68	1	10342
+120	47	0.082728	10341
+121	47	0.082728	1
+122	68	1	1024
+130	13	0	0
+130	47	0.082728	0
+130	68	1	0

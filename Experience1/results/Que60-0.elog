@@ -1,0 +1,38 @@
+E # 0 t 0 m 1 ce -1 msg -1
+SB v 1028 rid Que60-0-20140512-12:43:19-10071 b 1000
+KF p -1 c "" s ""
+MC id 1 c cCompoundModule t inet.examples.work.Experience1.Experience1 n Experience1 cm 1
+MS id 1 d bgb=549,525
+MC id 2 c cCompoundModule t inet.nodes.inet.StandardHost pid 1 n client1 cm 1
+MS id 2 d p=53,67;i=device/pc3;bgb=,448
+MC id 3 c cCompoundModule t inet.nodes.inet.StandardHost pid 1 n client2 cm 1
+MS id 3 d p=53,340;i=device/pc3;bgb=,448
+MC id 4 c cCompoundModule t inet.nodes.inet.StandardHost pid 1 n server cm 1
+MS id 4 d p=493,223;i=device/pc2;bgb=,448
+MC id 5 c IPv4NetworkConfigurator t inet.networklayer.autorouting.ipv4.IPv4NetworkConfigurator pid 1 n configurator
+MS id 5 d p=53,421;i=block/cogwheel_s
+MC id 6 c NetAnimTrace t inet.util.NetAnimTrace pid 1 n netAnimTrace
+MS id 6 d p=173,421;i=block/control_s
+MC id 7 c cCompoundModule t inet.nodes.inet.Router pid 1 n router cm 1
+MS id 7 d p=283,223;i=abstract/router;bgb=,448
+GC m 2 g 2097152 n pppg$i i 0 o 0
+GC m 2 g 2621440 n pppg$o i 0 o 1
+GC m 7 g 2097152 n pppg$i i 0 o 0
+GC m 7 g 2621440 n pppg$o i 0 o 1
+CC sm 2 sg 2621440 dm 7 dg 2097152
+CS sm 2 sg 2621440 d ""
+CC sm 7 sg 2621440 dm 2 dg 2097152
+CS sm 7 sg 2621440 d ""
+GC m 3 g 2097152 n pppg$i i 0 o 0
+GC m 3 g 2621440 n pppg$o i 0 o 1
+GC m 7 g 2097153 n pppg$i i 1 o 0
+GC m 7 g 2621441 n pppg$o i 1 o 1
+CC sm 3 sg 2621440 dm 7 dg 2097153
+CS sm 3 sg 2621440 d ""
+CC sm 7 sg 2621441 dm 3 dg 2097152
+CS sm 7 sg 2621441 d ""
+GC m 7 g 2097154 n pppg$i i 2 o 0
+GC m 7 g 2621442 n pppg$o i 2 o 1
+GC m 4 g 2097152 n pppg$i i 0 o 0
+GC m 4 g 2621440 n pppg$o i 0 o 1
+CC sm 7 sg 2621442 dm 4 dg 2097152
