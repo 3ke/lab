@@ -28,11 +28,14 @@ import inet.nodes.inet.AdhocHost;
 network assignment1
 {
     parameters:
-        int numHosts;
         @display("bgl=2");
     submodules:
-        host[numHosts]: AdhocHost {
+        client1 : AdhocHost{
             @display("r=,,#707070");
+            wlan[*].mgmtType = "Ieee80211MgmtSTASimplified";
+        }
+        client2 : AdhocHost{
+           @display("r=,,#707070");
             wlan[*].mgmtType = "Ieee80211MgmtSTASimplified";
         }
         ap: AccessPoint {
