@@ -1,193 +1,193 @@
-file 20547 1400040552                                           
+                                                                
 version 2
-run Assignment1-0-20140514-13:08:56-6025
+run Assignment1-0-20140515-12:24:03-2187
 attr configname Assignment1
-attr datetime 20140514-13:08:56
+attr datetime 20140515-12:24:03
 attr experiment Assignment1
 attr inifile assignment1.ini
 attr iterationvars ""
 attr iterationvars2 $repetition=0
 attr measurement ""
 attr network assignment1
-attr processid 6025
+attr processid 2187
 attr repetition 0
 attr replication #0
 attr resultdir results
 attr runnumber 0
 attr seedset 0
 
-vector 7  assignment1.client1.wlan[0].mgmt  dataQueueLen:vector  ETV
+vector 340  assignment1.client1.wlan[0].mgmt  dataQueueLen:vector  ETV
 attr interpolationmode  sample-hold
 attr title  "data queue length, vector"
-vector 25  assignment1.client2.wlan[0].mgmt  dataQueueLen:vector  ETV
+vector 358  assignment1.client2.wlan[0].mgmt  dataQueueLen:vector  ETV
 attr interpolationmode  sample-hold
 attr title  "data queue length, vector"
-vector 35  assignment1.ap.wlan[0].mgmt  dataQueueLen:vector  ETV
+vector 368  assignment1.ap.wlan[0].mgmt  dataQueueLen:vector  ETV
 attr interpolationmode  sample-hold
 attr title  "data queue length, vector"
-vector 46  assignment1.client1.wlan[0].mac  RadioState  ETV
+vector 379  assignment1.client1.wlan[0].mac  RadioState  ETV
 attr enum  "IDLE=0, OFF=4, RECV=1, SLEEP=3, TRANSMIT=2"
 attr enumname  RadioState
-vector 45  assignment1.client1.wlan[0].mac  State  ETV
+vector 378  assignment1.client1.wlan[0].mac  State  ETV
 attr enum  "BACKOFF=3, DEFER=1, IDLE=0, RECEIVE=8, WAITACK=4, WAITAIFS=2, WAITCTS=6, WAITMULTICAST=5, WAITSIFS=7"
 attr enumname  Ieee80211Mac
-vector 52  assignment1.client2.wlan[0].mac  RadioState  ETV
+vector 385  assignment1.client2.wlan[0].mac  RadioState  ETV
 attr enum  "IDLE=0, OFF=4, RECV=1, SLEEP=3, TRANSMIT=2"
 attr enumname  RadioState
-vector 51  assignment1.client2.wlan[0].mac  State  ETV
+vector 384  assignment1.client2.wlan[0].mac  State  ETV
 attr enum  "BACKOFF=3, DEFER=1, IDLE=0, RECEIVE=8, WAITACK=4, WAITAIFS=2, WAITCTS=6, WAITMULTICAST=5, WAITSIFS=7"
 attr enumname  Ieee80211Mac
-vector 58  assignment1.ap.wlan[0].mac  RadioState  ETV
+vector 391  assignment1.ap.wlan[0].mac  RadioState  ETV
 attr enum  "IDLE=0, OFF=4, RECV=1, SLEEP=3, TRANSMIT=2"
 attr enumname  RadioState
-vector 57  assignment1.ap.wlan[0].mac  State  ETV
+vector 390  assignment1.ap.wlan[0].mac  State  ETV
 attr enum  "BACKOFF=3, DEFER=1, IDLE=0, RECEIVE=8, WAITACK=4, WAITAIFS=2, WAITCTS=6, WAITMULTICAST=5, WAITSIFS=7"
 attr enumname  Ieee80211Mac
-vector 13  assignment1.client1.wlan[0].radio  bitrate:vector  ETV
+vector 346  assignment1.client1.wlan[0].radio  bitrate:vector  ETV
 attr interpolationmode  sample-hold
 attr title  "tx bitrate, vector"
 attr unit  bps
-vector 15  assignment1.client1.wlan[0].radio  radioState:vector  ETV
+vector 348  assignment1.client1.wlan[0].radio  radioState:vector  ETV
 attr interpolationmode  sample-hold
 attr title  "radio state (enum), vector"
-vector 14  assignment1.client1.wlan[0].radio  channelNo:vector  ETV
+vector 347  assignment1.client1.wlan[0].radio  channelNo:vector  ETV
 attr interpolationmode  sample-hold
 attr title  "channel no, vector"
-vector 31  assignment1.client2.wlan[0].radio  bitrate:vector  ETV
+vector 364  assignment1.client2.wlan[0].radio  bitrate:vector  ETV
 attr interpolationmode  sample-hold
 attr title  "tx bitrate, vector"
 attr unit  bps
-vector 33  assignment1.client2.wlan[0].radio  radioState:vector  ETV
+vector 366  assignment1.client2.wlan[0].radio  radioState:vector  ETV
 attr interpolationmode  sample-hold
 attr title  "radio state (enum), vector"
-vector 32  assignment1.client2.wlan[0].radio  channelNo:vector  ETV
+vector 365  assignment1.client2.wlan[0].radio  channelNo:vector  ETV
 attr interpolationmode  sample-hold
 attr title  "channel no, vector"
-vector 41  assignment1.ap.wlan[0].radio  bitrate:vector  ETV
+vector 374  assignment1.ap.wlan[0].radio  bitrate:vector  ETV
 attr interpolationmode  sample-hold
 attr title  "tx bitrate, vector"
 attr unit  bps
-vector 43  assignment1.ap.wlan[0].radio  radioState:vector  ETV
+vector 376  assignment1.ap.wlan[0].radio  radioState:vector  ETV
 attr interpolationmode  sample-hold
 attr title  "radio state (enum), vector"
-vector 42  assignment1.ap.wlan[0].radio  channelNo:vector  ETV
+vector 375  assignment1.ap.wlan[0].radio  channelNo:vector  ETV
 attr interpolationmode  sample-hold
 attr title  "channel no, vector"
-vector 102  assignment1.client2.tcp  tcpRcvQueueBytes  ETV
-vector 89  assignment1.client2.tcp  "advertised window"  ETV
-vector 88  assignment1.client2.tcp  "receive window"  ETV
-vector 91  assignment1.client2.tcp  "sent ack"  ETV
-vector 20  assignment1.client2.networkLayer.arp  sentReq:vector  ETV
+vector 435  assignment1.client2.tcp  tcpRcvQueueBytes  ETV
+vector 422  assignment1.client2.tcp  "advertised window"  ETV
+vector 421  assignment1.client2.tcp  "receive window"  ETV
+vector 424  assignment1.client2.tcp  "sent ack"  ETV
+vector 353  assignment1.client2.networkLayer.arp  sentReq:vector  ETV
 attr title  "ARP request sent, vector"
-vector 29  assignment1.client2.wlan[0].mac  rcvdPkFromHL:vector(packetBytes)  ETV
+vector 362  assignment1.client2.wlan[0].mac  rcvdPkFromHL:vector(packetBytes)  ETV
 attr interpolationmode  none
 attr source  packetReceivedFromUpper
 attr title  "packets received from higher layer, vector(packetBytes)"
-vector 28  assignment1.client2.wlan[0].mac  sentDownPk:vector(packetBytes)  ETV
+vector 361  assignment1.client2.wlan[0].mac  sentDownPk:vector(packetBytes)  ETV
 attr interpolationmode  none
 attr source  packetSentToLower
 attr title  "packets sent to lower layer, vector(packetBytes)"
-vector 50  assignment1.client1.wlan[0].radio  snirVector  ETV
-vector 12  assignment1.client1.wlan[0].mac  rcvdPkFromLL:vector(packetBytes)  ETV
+vector 383  assignment1.client1.wlan[0].radio  snirVector  ETV
+vector 345  assignment1.client1.wlan[0].mac  rcvdPkFromLL:vector(packetBytes)  ETV
 attr interpolationmode  none
 attr source  packetReceivedFromLower
 attr title  "packets received from lower layer, vector(packetBytes)"
-vector 62  assignment1.ap.wlan[0].radio  snirVector  ETV
-vector 40  assignment1.ap.wlan[0].mac  rcvdPkFromLL:vector(packetBytes)  ETV
+vector 395  assignment1.ap.wlan[0].radio  snirVector  ETV
+vector 373  assignment1.ap.wlan[0].mac  rcvdPkFromLL:vector(packetBytes)  ETV
 attr interpolationmode  none
 attr source  packetReceivedFromLower
 attr title  "packets received from lower layer, vector(packetBytes)"
-vector 37  assignment1.ap.wlan[0].mac  passedUpPk:vector(packetBytes)  ETV
+vector 370  assignment1.ap.wlan[0].mac  passedUpPk:vector(packetBytes)  ETV
 attr interpolationmode  none
 attr source  packetSentToUpper
 attr title  "packets passed to higher layer, vector(packetBytes)"
-vector 39  assignment1.ap.wlan[0].mac  rcvdPkFromHL:vector(packetBytes)  ETV
+vector 372  assignment1.ap.wlan[0].mac  rcvdPkFromHL:vector(packetBytes)  ETV
 attr interpolationmode  none
 attr source  packetReceivedFromUpper
 attr title  "packets received from higher layer, vector(packetBytes)"
-vector 38  assignment1.ap.wlan[0].mac  sentDownPk:vector(packetBytes)  ETV
+vector 371  assignment1.ap.wlan[0].mac  sentDownPk:vector(packetBytes)  ETV
 attr interpolationmode  none
 attr source  packetSentToLower
 attr title  "packets sent to lower layer, vector(packetBytes)"
-vector 56  assignment1.client2.wlan[0].radio  snirVector  ETV
-vector 30  assignment1.client2.wlan[0].mac  rcvdPkFromLL:vector(packetBytes)  ETV
+vector 389  assignment1.client2.wlan[0].radio  snirVector  ETV
+vector 363  assignment1.client2.wlan[0].mac  rcvdPkFromLL:vector(packetBytes)  ETV
 attr interpolationmode  none
 attr source  packetReceivedFromLower
 attr title  "packets received from lower layer, vector(packetBytes)"
-vector 55  assignment1.client2.wlan[0].mac  "Mac delay AC0"  ETV
-vector 9  assignment1.client1.wlan[0].mac  passedUpPk:vector(packetBytes)  ETV
+vector 388  assignment1.client2.wlan[0].mac  "Mac delay AC0"  ETV
+vector 342  assignment1.client1.wlan[0].mac  passedUpPk:vector(packetBytes)  ETV
 attr interpolationmode  none
 attr source  packetSentToUpper
 attr title  "packets passed to higher layer, vector(packetBytes)"
-vector 3  assignment1.client1.networkLayer.arp  sentReply:vector  ETV
+vector 336  assignment1.client1.networkLayer.arp  sentReply:vector  ETV
 attr title  "ARP replies sent, vector"
-vector 11  assignment1.client1.wlan[0].mac  rcvdPkFromHL:vector(packetBytes)  ETV
+vector 344  assignment1.client1.wlan[0].mac  rcvdPkFromHL:vector(packetBytes)  ETV
 attr interpolationmode  none
 attr source  packetReceivedFromUpper
 attr title  "packets received from higher layer, vector(packetBytes)"
-vector 10  assignment1.client1.wlan[0].mac  sentDownPk:vector(packetBytes)  ETV
+vector 343  assignment1.client1.wlan[0].mac  sentDownPk:vector(packetBytes)  ETV
 attr interpolationmode  none
 attr source  packetSentToLower
 attr title  "packets sent to lower layer, vector(packetBytes)"
-vector 49  assignment1.client1.wlan[0].mac  "Mac delay AC0"  ETV
-vector 27  assignment1.client2.wlan[0].mac  passedUpPk:vector(packetBytes)  ETV
+vector 382  assignment1.client1.wlan[0].mac  "Mac delay AC0"  ETV
+vector 360  assignment1.client2.wlan[0].mac  passedUpPk:vector(packetBytes)  ETV
 attr interpolationmode  none
 attr source  packetSentToUpper
 attr title  "packets passed to higher layer, vector(packetBytes)"
-vector 61  assignment1.ap.wlan[0].mac  "Mac delay AC0"  ETV
-vector 68  assignment1.client1.tcp  "rcvd seq"  ETV
-vector 69  assignment1.client1.tcp  "rcvd ack"  ETV
-vector 65  assignment1.client1.tcp  "advertised window"  ETV
-vector 63  assignment1.client1.tcp  "send window"  ETV
-vector 78  assignment1.client1.tcp  tcpRcvQueueBytes  ETV
-vector 64  assignment1.client1.tcp  "receive window"  ETV
-vector 67  assignment1.client1.tcp  "sent ack"  ETV
-3	6823 22 50 50 0.001331567079 0.001331567079 1 1 1 1 1
-7	6845 8 0 0 0 0 1 0 0 0 0
-9	6853 47 47 144 0.001331567079 0.002915701237 2 70 86 156 12296
-10	6900 74 56 162 0.001359567079 0.003257701237 3 14 86 170 12492
-11	6974 49 53 150 0.001331567079 0.002915701237 2 70 86 156 12296
-12	7023 220 20 144 0.000066193398 0.002915701237 9 14 86 438 30276
-13	7243 16 0 0 0 0 1 54000000 54000000 54000000 2.916e+15
-14	7259 9 0 0 0 0 1 0 0 0 0
-15	7268 573 0 167 0 0.003299701237 25 0 2 15 21
-20	7841 10 10 10 0 0 1 1 1 1 1
-25	7851 9 0 0 0 0 1 0 0 0 0
-27	7860 24 89 89 0.001940134158 0.001940134158 1 70 70 70 4900
-28	7884 67 14 109 0.000028 0.002282134158 3 14 86 170 12492
-29	7951 35 13 94 0 0.001940134158 2 70 86 156 12296
-30	7986 218 33 169 0.00038055614 0.003299894635 9 14 86 438 30276
-31	8204 16 0 0 0 0 1 54000000 54000000 54000000 2.916e+15
-32	8220 9 0 0 0 0 1 0 0 0 0
-33	8229 580 0 177 0 0.003310268316 26 0 2 16 22
-35	8809 9 0 0 0 0 1 0 0 0 0
-37	8818 97 23 172 0.00006627807 0.003299990246 4 70 86 312 24592
-38	8915 169 26 175 0.00007627807 0.003309990246 7 14 86 282 17980
-39	9084 97 25 174 0.00006627807 0.003299990246 4 70 86 312 24592
-40	9181 147 23 172 0.00006627807 0.003299990246 6 14 86 340 24984
-41	9328 16 0 0 0 0 1 54000000 54000000 54000000 2.916e+15
-42	9344 9 0 0 0 0 1 0 0 0 0
-43	9353 591 0 176 0 0.003309990246 26 0 2 20 34
-45	9944 2178 0 167 0 0.003299701237 94 0 7 104 408
-46	12122 1146 0 167 0 0.003299701237 50 0 2 30 42
-49	13268 36 77 77 0.001712145097 0.001712145097 1 0.000380578018 0.000380578018 0.000380578018 1.4483962778481e-07
-50	13304 37 19 19 0.000066193398 0.000066193398 1 37.692830435332 37.692830435332 37.692830435332 1420.7494662267
-51	13341 2286 0 177 0 0.003310268316 102 0 7 178 602
-52	15627 1160 0 177 0 0.003310268316 52 0 2 31 43
-55	16787 70 33 129 0.00038055614 0.002638690298 2 0.00038055614 0.00069855614 0.00107911228 6.328036564234e-07
-56	16857 36 32 32 0.00038055614 0.00038055614 1 34.538773240917 34.538773240917 34.538773240917 1192.9268569875
-57	16893 2110 0 176 0 0.003309990246 92 0 7 259 1039
-58	19003 1182 0 176 0 0.003309990246 52 0 2 38 64
-61	20185 73 107 160 0.002254412228 0.003229990246 2 0.00085655614 0.000905578018 0.001762134158 1.5537599676565e-06
-62	20258 36 22 22 0.00006627807 0.00006627807 1 34.538773240917 34.538773240917 34.538773240917 1192.9268569875
-63	20294 28 147 147 0.002915701237 0.002915701237 1 65535 65535 65535 4294836225
-64	20322 28 147 147 0.002915701237 0.002915701237 1 65535 65535 65535 4294836225
-65	20350 56 147 147 0.002915701237 0.002915701237 2 65536 65536 131072 8589934592
-67	20406 24 147 147 0.002915701237 0.002915701237 1 1 1 1 1
-68	20430 24 147 147 0.002915701237 0.002915701237 1 0 0 0 0
-69	20454 24 147 147 0.002915701237 0.002915701237 1 0 0 0 0
-78	20478 24 147 147 0.002915701237 0.002915701237 1 0 0 0 0
-88	20502 13 9 9 0 0 1 65535 65535 65535 4294836225
-89	20515 13 9 9 0 0 1 65535 65535 65535 4294836225
-91	20528 9 9 9 0 0 1 0 0 0 0
-102	20537 10 9 9 0 0 1 0 0 0 0
+vector 394  assignment1.ap.wlan[0].mac  "Mac delay AC0"  ETV
+vector 401  assignment1.client1.tcp  "rcvd seq"  ETV
+vector 402  assignment1.client1.tcp  "rcvd ack"  ETV
+vector 398  assignment1.client1.tcp  "advertised window"  ETV
+vector 396  assignment1.client1.tcp  "send window"  ETV
+vector 411  assignment1.client1.tcp  tcpRcvQueueBytes  ETV
+vector 397  assignment1.client1.tcp  "receive window"  ETV
+vector 400  assignment1.client1.tcp  "sent ack"  ETV
+vector 425  assignment1.client2.tcp  "rcvd seq"  ETV
+vector 426  assignment1.client2.tcp  "rcvd ack"  ETV
+vector 420  assignment1.client2.tcp  "send window"  ETV
+vector 351  assignment1.client2.tcpApp[0]  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 423  assignment1.client2.tcp  "sent seq"  ETV
+vector 427  assignment1.client2.tcp  "unacked bytes"  ETV
+vector 403  assignment1.client1.tcp  "unacked bytes"  ETV
+vector 404  assignment1.client1.tcp  "rcvd dupAcks"  ETV
+vector 333  assignment1.client1.tcpApp[0]  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, vector(packetBytes)"
+vector 334  assignment1.client1.tcpApp[0]  endToEndDelay:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, vector"
+attr unit  s
+vector 439  assignment1.client2.tcp  "measured RTT"  ETV
+vector 440  assignment1.client2.tcp  "smoothed RTT"  ETV
+vector 441  assignment1.client2.tcp  RTTVAR  ETV
+vector 442  assignment1.client2.tcp  RTO  ETV
+vector 437  assignment1.client2.tcp  cwnd  ETV
+vector 428  assignment1.client2.tcp  "rcvd dupAcks"  ETV
+vector 367  assignment1.client2.wlan[0].radio  lossRate:vector  ETV
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, vector"
+vector 349  assignment1.client1.wlan[0].radio  lossRate:vector  ETV
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, vector"
+vector 377  assignment1.ap.wlan[0].radio  lossRate:vector  ETV
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, vector"
+vector 369  assignment1.ap.wlan[0].mgmt  dropPkByQueue:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, vector(packetBytes)"
+vector 408  assignment1.client1.tcp  "rcvd oooseg"  ETV
+vector 438  assignment1.client2.tcp  ssthresh  ETV
+vector 393  assignment1.ap.wlan[0].mac  "throughput AC0"  ETV
+vector 392  assignment1.ap.wlan[0].mac  "jitter AC0"  ETV
+vector 387  assignment1.client2.wlan[0].mac  "throughput AC0"  ETV
+vector 386  assignment1.client2.wlan[0].mac  "jitter AC0"  ETV
+vector 381  assignment1.client1.wlan[0].mac  "throughput AC0"  ETV
+vector 380  assignment1.client1.wlan[0].mac  "jitter AC0"  ETV
+vector 443  assignment1.client2.tcp  numRTOs  ETV
+vector 409  assignment1.client1.tcp  "rcvd naseg"  ETV
