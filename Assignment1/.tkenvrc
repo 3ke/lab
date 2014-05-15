@@ -1,3 +1,4 @@
 # Partial Tkenv config file -- see $HOME/.tkenvrc as well
+inspector "assignment1" "assignment1" "2" "607x336+-1+56:normal"
 inspector "Lan80211" "Lan80211" "2" "611x443+559+143:normal"
 

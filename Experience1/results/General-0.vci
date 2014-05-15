@@ -1,4 +1,4 @@
-file 2688 1399863937                                            
+file 2688 1400125604                                            
 version 2
 run General-0-20140512-12:05:28-7222
 attr configname General
@@ -15,68 +15,67 @@ attr replication #0
 attr resultdir results
 attr runnumber 0
 attr seedset 0
-
 vector 11  Experience1.client1.ppp[0].queue  queueLength:vector  ETV
-attr interpolationmode  sample-hold
-attr title  "queue length, vector"
-vector 12  Experience1.client1.ppp[0].ppp  txState:vector  ETV
-attr interpolationmode  sample-hold
-attr title  "tx state, vector"
-vector 37  Experience1.client2.ppp[0].queue  queueLength:vector  ETV
-attr interpolationmode  sample-hold
-attr title  "queue length, vector"
-vector 38  Experience1.client2.ppp[0].ppp  txState:vector  ETV
-attr interpolationmode  sample-hold
-attr title  "tx state, vector"
-vector 62  Experience1.server.ppp[0].queue  queueLength:vector  ETV
-attr interpolationmode  sample-hold
-attr title  "queue length, vector"
-vector 63  Experience1.server.ppp[0].ppp  txState:vector  ETV
-attr interpolationmode  sample-hold
-attr title  "tx state, vector"
-vector 78  Experience1.router.ppp[0].queue  queueLength:vector  ETV
-attr interpolationmode  sample-hold
-attr title  "queue length, vector"
-vector 79  Experience1.router.ppp[0].ppp  txState:vector  ETV
-attr interpolationmode  sample-hold
-attr title  "tx state, vector"
-vector 89  Experience1.router.ppp[1].queue  queueLength:vector  ETV
-attr interpolationmode  sample-hold
-attr title  "queue length, vector"
-vector 90  Experience1.router.ppp[1].ppp  txState:vector  ETV
-attr interpolationmode  sample-hold
-attr title  "tx state, vector"
-vector 100  Experience1.router.ppp[2].queue  queueLength:vector  ETV
-attr interpolationmode  sample-hold
-attr title  "queue length, vector"
-vector 101  Experience1.router.ppp[2].ppp  txState:vector  ETV
-attr interpolationmode  sample-hold
-attr title  "tx state, vector"
-vector 147  Experience1.client1.tcp  tcpRcvQueueBytes  ETV
-vector 134  Experience1.client1.tcp  "advertised window"  ETV
-vector 133  Experience1.client1.tcp  "receive window"  ETV
-vector 136  Experience1.client1.tcp  "sent ack"  ETV
-vector 8  Experience1.client1.ppp[0].queue  rcvdPk:vector(packetBytes)  ETV
-attr interpolationmode  none
-attr title  "received packets, vector(packetBytes)"
-vector 10  Experience1.client1.ppp[0].queue  queueingTime:vector  ETV
-attr interpolationmode  none
-attr title  "queueing time, vector"
-8	2506 10 19 19 0 0 1 44 44 44 1936
-10	2516 10 19 19 0 0 1 0 0 0 0
+attr interpolationmode sample-hold
+attr title "queue length, vector"
 11	2526 9 0 0 0 0 1 0 0 0 0
+vector 12  Experience1.client1.ppp[0].ppp  txState:vector  ETV
+attr interpolationmode sample-hold
+attr title "tx state, vector"
 12	2535 9 0 0 0 0 1 0 0 0 0
+vector 37  Experience1.client2.ppp[0].queue  queueLength:vector  ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
 37	2544 9 0 0 0 0 1 0 0 0 0
+vector 38  Experience1.client2.ppp[0].ppp  txState:vector  ETV
+attr interpolationmode sample-hold
+attr title "tx state, vector"
 38	2553 9 0 0 0 0 1 0 0 0 0
+vector 62  Experience1.server.ppp[0].queue  queueLength:vector  ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
 62	2562 9 0 0 0 0 1 0 0 0 0
+vector 63  Experience1.server.ppp[0].ppp  txState:vector  ETV
+attr interpolationmode sample-hold
+attr title "tx state, vector"
 63	2571 9 0 0 0 0 1 0 0 0 0
+vector 78  Experience1.router.ppp[0].queue  queueLength:vector  ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
 78	2580 9 0 0 0 0 1 0 0 0 0
+vector 79  Experience1.router.ppp[0].ppp  txState:vector  ETV
+attr interpolationmode sample-hold
+attr title "tx state, vector"
 79	2589 9 0 0 0 0 1 0 0 0 0
+vector 89  Experience1.router.ppp[1].queue  queueLength:vector  ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
 89	2598 9 0 0 0 0 1 0 0 0 0
+vector 90  Experience1.router.ppp[1].ppp  txState:vector  ETV
+attr interpolationmode sample-hold
+attr title "tx state, vector"
 90	2607 9 0 0 0 0 1 0 0 0 0
+vector 100  Experience1.router.ppp[2].queue  queueLength:vector  ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
 100	2616 10 0 0 0 0 1 0 0 0 0
+vector 101  Experience1.router.ppp[2].ppp  txState:vector  ETV
+attr interpolationmode sample-hold
+attr title "tx state, vector"
 101	2626 10 0 0 0 0 1 0 0 0 0
-133	2636 15 17 17 0 0 1 65535 65535 65535 4294836225
-134	2651 15 17 17 0 0 1 65535 65535 65535 4294836225
-136	2666 11 17 17 0 0 1 0 0 0 0
+vector 147  Experience1.client1.tcp  tcpRcvQueueBytes  ETV
 147	2677 11 17 17 0 0 1 0 0 0 0
+vector 134  Experience1.client1.tcp  "advertised window"  ETV
+134	2651 15 17 17 0 0 1 65535 65535 65535 4294836225
+vector 133  Experience1.client1.tcp  "receive window"  ETV
+133	2636 15 17 17 0 0 1 65535 65535 65535 4294836225
+vector 136  Experience1.client1.tcp  "sent ack"  ETV
+136	2666 11 17 17 0 0 1 0 0 0 0
+vector 8  Experience1.client1.ppp[0].queue  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode none
+attr title "received packets, vector(packetBytes)"
+8	2506 10 19 19 0 0 1 44 44 44 1936
+vector 10  Experience1.client1.ppp[0].queue  queueingTime:vector  ETV
+attr interpolationmode none
+attr title "queueing time, vector"
+10	2516 10 19 19 0 0 1 0 0 0 0
